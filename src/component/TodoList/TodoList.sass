@@ -1,0 +1,48 @@
+.todoList
+  margin-top: 16px
+  height: 200px
+  overflow-y: scroll
+  list-style: none
+  -ms-overflow-style: none
+  scrollbar-width: none
+
+  &::-webkit-scrollbar
+    display: none
+
+.todo
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 8px
+  &:last-child
+    margin-bottom: 0
+
+  label
+    display: flex
+    align-items: center
+  span
+    display: block
+    max-width: 200px
+    word-break: break-all
+
+  input
+    display: block
+    width: 16px
+    height: 16px
+    margin-right: 8px
+    color: #f7ede2
+
+.todo.checked
+  span
+    text-decoration: line-through
+
+.todoList_delete,
+.todoList_edit
+  cursor: pointer
+
+.todoList_edit
+  margin-right: 10px
+
+.todoList_empty
+  margin-top: 16px
+  text-align: center

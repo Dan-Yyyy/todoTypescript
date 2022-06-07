@@ -1,0 +1,29 @@
+.input-container
+  position: relative
+  width: 100%
+  margin-bottom: 5px
+
+  input
+    width: 100%
+    padding: 4px 4px 2px
+    margin-top: 10px
+    border: none
+    border-bottom: 1px solid grey
+    background-color: transparent
+    border-radius: 0
+    -webkit-appearance: none
+    &:focus
+      outline: none
+      border-color: #212121
+      & ~ label
+        color: #212121
+  .label
+    position: absolute
+    top: 10px
+    left: 0
+    color: grey
+    font-size: 14px
+    pointer-events: none
+    &--active
+      top: -4px
+      font-size: 12px
